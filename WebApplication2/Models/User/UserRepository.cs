@@ -44,6 +44,11 @@ namespace WebApplication2.Models.User
             return _dbContext.Users.Include(a=> a.Address).FirstOrDefault(u => u.Id == id);
         }
 
+        public Task<User> GetByIdNoTracking(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public User Update(User User)
         {
             //User user = _dbContext.Users.Find(User.Email);
