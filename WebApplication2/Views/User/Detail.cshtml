@@ -1,0 +1,17 @@
+﻿@model UserDetailsViewModel
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>@Model.Header</title>
+     </head>
+    <body>
+        <h2>@Model.User.Name</h2>
+
+        <ul>
+            <li>@Model.User.Address.State</li>
+            <li>@Model.User.Address.City</li>
+            <li>@Model.User.Address.Street</li>
+        </ul>
+    </body>
+</html>
